@@ -1,10 +1,12 @@
+import { FC } from 'react';
+
 import '../assets/styles/App.css';
 
 import { Hero } from '../components/Hero';
 import { Navbar } from '../components/Navbar';
 import { Section } from '../components/Section';
 
-function App() {
+export const App : FC = () => {
   return (
     <div className="App h-screen">
       <Navbar />
@@ -13,5 +15,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
