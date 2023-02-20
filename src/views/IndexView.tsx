@@ -4,7 +4,7 @@ import { Hero } from "../components/Hero";
 import { Section } from "../components/Section";
 import { GridContainer } from "../components/GridContainer";
 
-export const IndexPage : FC = () => {
+export const IndexView : FC = () => {
     return (
         <>
             <Header />
