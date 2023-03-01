@@ -1,5 +1,6 @@
 import React, { useState, FC } from 'react'
 import { AiOutlineHeart, AiFillHeart } from 'react-icons/ai';
+import { FaComments } from 'react-icons/fa';
 
 const getIcon = (favorite: Boolean, onClick: () => void) : JSX.Element =>  {
     if (favorite) {
@@ -20,7 +21,7 @@ export const Card : FC = () => {
                     {getIcon(favorite, () => setFavorite((prev) => !prev))}
                 </div>
             </div>
-            <div className='p-4'>
+            <div className='p-2'>
                 <span></span>
                 <h2 className='font-medium text-base py-2'>Lorem, ipsum dolor sit amet consectetur</h2>
                 <p className='text-sm text-gray-400'>
@@ -28,6 +29,16 @@ export const Card : FC = () => {
                     ipsum eum amet velit recusandae doloribus, culpa beatae maxime corrupti 
                     vel dolorem harum perferendis exercitationem optio sit, obcaecati consequatur voluptatum?
                 </p>
+            </div>
+            <div className='flex justify-evenly items-center px-6 text-slate-400'>
+                <div className='mx-2 flex justify-end items-cente'>
+                    <span>12</span>
+                    <AiFillHeart className='m-1'/>
+                </div>
+                <div className='mx-2 flex justify-end items-cente'>
+                    <span>12</span>
+                    <FaComments className='m-1'/>
+                </div>
             </div>
         </div>
     )

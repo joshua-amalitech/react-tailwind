@@ -1,4 +1,5 @@
 import React, { FC } from 'react'
+import { Link } from 'react-router-dom'
 
 export const Header : FC = () => {
   return (
@@ -8,7 +9,9 @@ export const Header : FC = () => {
             <nav>
               <ul className='flex'>
                 <li className='px-4 text-gray-600 cursor-pointer transition ease-in-out hover:text-gray-800'>Home</li>
-                <li className='px-4 text-gray-600 cursor-pointer transition ease-in-out hover:text-gray-800'>About</li>
+                <li className='px-4 text-gray-600 cursor-pointer transition ease-in-out hover:text-gray-800'>
+                  <Link to="/about">About</Link>
+                </li>
                 <li className='px-4 text-gray-600 cursor-pointer transition ease-in-out hover:text-gray-800'>Contact</li>
               </ul>
             </nav>
